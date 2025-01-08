@@ -62,6 +62,7 @@ country_capitals = {
 
 st.text('\n\n')
 st.write('나라 이름을 입력하면 해당 나라의 수도를 알려줍니다.')
+st.write('만약 수도가 3개인 나라를 찾는다면 크나큰 선물이 주어집니다!')
 
 # 사용자 입력
 country_name = st.text_input("나라 이름을 입력하세요:", '')
