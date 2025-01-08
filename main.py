@@ -71,5 +71,10 @@ if country_name:
     capital = country_capitals.get(country_name)
     if capital:
         st.write(f"{country_name}의 수도는 {capital}입니다.")
+        # '남아프리카공화국'이 입력된 경우 선물 상자 표시
+        if country_name == "남아프리카공화국":
+            st.write("수도가 3개인 나라를 찾으셨군요! 큰 선물이 주어집니다.")
+            st.balloons()  # 선물 효과로 풍선 등장
+            st.image("https://upload.wikimedia.org/wikipedia/commons/0/0b/Present_icon.svg", width=100)  # 선물 상자 이미지
     else:
         st.write(f"{country_name}의 수도 정보를 찾을 수 없습니다.")
